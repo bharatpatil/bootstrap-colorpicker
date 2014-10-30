@@ -1,0 +1,30 @@
+{
+  "name": "bootstrap-colorpicker",
+  "version": "1.0.0",
+  "authors": [
+    "Stefan Petre",
+    "Bharat Patil"
+  ],
+  "main": [
+    "./js/bootstrap-colorpicker.js",
+    "./css/colorpicker.css"
+  ],
+  "description": "bootstrap-colorpicker with touch support",
+  "keywords": [
+    "bootstrap-colorpicker"
+  ],
+  "license": "Apache License, Version 2.0",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "bootstrap": "~3.3.0"
+  },
+  "homepage": "http://www.eyecon.ro/bootstrap-colorpicker/"
+}
