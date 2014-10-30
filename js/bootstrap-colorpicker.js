@@ -264,6 +264,10 @@
 		slider: null,
 		
 		mousedown: function(e){			
+			if(!e.pageX && !e.pageY && e.originalEvent && e.originalEvent.touches) {
+				e.pageX = e.originalEvent.touches[0].pageX;
+				e.pageY = e.originalEvent.touches[0].pageY;
+			}
 			e.stopPropagation();
 			e.preventDefault();
 			
@@ -305,6 +309,10 @@
 		},
 		
 		mousemove: function(e){
+			if(!e.pageX && !e.pageY && e.originalEvent && e.originalEvent.touches) {
+				e.pageX = e.originalEvent.touches[0].pageX;
+				e.pageY = e.originalEvent.touches[0].pageY;
+			}			
 			e.stopPropagation();
 			e.preventDefault();
 			var left = Math.max(
